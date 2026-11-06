@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-luma",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "mist",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "tabler",
+  "aliases": {
+    "components": "@pmi-south-asia/ui/components",
+    "utils": "@pmi-south-asia/ui/lib/utils",
+    "hooks": "@pmi-south-asia/ui/hooks",
+    "lib": "@pmi-south-asia/ui/lib",
+    "ui": "@pmi-south-asia/ui/components"
+  },
+  "menuColor": "default-translucent",
+  "menuAccent": "subtle",
+  "registries": {},
+  "rtl": false
+}

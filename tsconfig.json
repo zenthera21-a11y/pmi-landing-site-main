@@ -1,0 +1,6 @@
+{
+  "extends": "@pmi-south-asia/config/tsconfig.base.json",
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}
