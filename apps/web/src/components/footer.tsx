@@ -99,7 +99,7 @@ const FOOTER_COLUMNS = [
     ],
   },
   {
-    title: "PMI SA for Organizations",
+    title: "PMIS for Organizations",
     links: [
       { label: "Partners", href: "/business-solutions/commercial-partners" },
       {
@@ -207,7 +207,7 @@ function FooterLogo() {
     <>
       <Link className="inline-flex items-center gap-3" to="/">
         <img
-          alt="PMI SA"
+          alt="PMIS Services"
           className="h-10 w-auto"
           height={40}
           src="/logo.webp"
@@ -218,7 +218,7 @@ function FooterLogo() {
       <div className="border-[#d4cbc3] border-t" />
 
       <p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
-        PMI SA®
+        PMIS Services®
       </p>
     </>
   );

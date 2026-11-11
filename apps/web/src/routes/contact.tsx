@@ -92,7 +92,7 @@ function ContactComponent() {
 
   const toggleCert = (cert: string) => {
     setSelectedCerts((prev) =>
-      prev.includes(cert) ? prev.filter((c) => c !== cert) : [...prev, cert]
+      prev.includes(cert) ? prev.filter((c) => c !== cert) : [...prev, cert],
     );
   };
 
@@ -123,7 +123,7 @@ function ContactComponent() {
   const availableCertifications = certifications ?? [];
 
   const filteredCertifications = availableCertifications.filter((cert) =>
-    cert.name.toLowerCase().includes(certSearchQuery.toLowerCase())
+    cert.name.toLowerCase().includes(certSearchQuery.toLowerCase()),
   );
 
   return (
@@ -175,7 +175,7 @@ function ContactComponent() {
                       +91 8065347982
                     </a>
                     <p className="text-gray-500 text-sm">
-                      Mon-Fri, 9am - 5pm IST
+                      Mon-Sat, 10am - 9pm IST
                     </p>
                   </div>
                 </div>
@@ -190,9 +190,9 @@ function ContactComponent() {
                     </p>
                     <a
                       className="mb-1 block font-semibold text-lg hover:underline"
-                      href="mailto:sales@pmiindia.com"
+                      href="mailto:sales@pmisservices.com"
                     >
-                      sales@pmiindia.com
+                      sales@pmisservices.com
                     </a>
                     <p className="text-gray-500 text-sm">
                       Expect a reply within 24 hours
@@ -237,7 +237,7 @@ function ContactComponent() {
             </div>
           </div>
 
-          <div className="relative bg-white p-10 md:p-16 lg:w-3/5">
+          <div className="relative min-w-0 flex-1 bg-white p-6 sm:p-10 lg:w-3/5 lg:p-12 xl:p-16">
             {submitted ? (
               <div className="flex h-full flex-col items-center justify-center text-center">
                 <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-green-50">
@@ -263,9 +263,23 @@ function ContactComponent() {
                 className="flex h-full flex-col"
                 onSubmit={handleSubmit(onSubmit)}
               >
-                <h3 className="mb-8 font-bold text-2xl text-gray-900">
-                  Send us a message
-                </h3>
+                <div className="mb-10">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-600" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-blue-700">
+                      Start Your Journey
+                    </span>
+                  </div>
+
+                  <h3 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Register <span className="text-blue-600">Now</span>
+                  </h3>
+
+                  <p className="mt-3 max-w-lg text-sm leading-6 text-gray-500">
+                    Share your details and explore professional certifications
+                    that support your career goals.
+                  </p>
+                </div>
 
                 <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div className="group">

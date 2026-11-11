@@ -192,7 +192,7 @@ const NAV_ITEMS: readonly NavItem[] = [
     ],
   },
   {
-    label: "PMI SA for Organizations",
+    label: "PMIS for Organizations",
     groups: [
       {
         title: "Enterprise",
@@ -274,7 +274,7 @@ function NavLinkItem({ link }: { link: NavLink }) {
 
 const ABOUT_TRIGGER = cn(
   navigationMenuTriggerStyle(),
-  "h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white"
+  "h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white",
 );
 
 function AnnouncementBanner({ onClose }: { onClose: () => void }) {
@@ -311,7 +311,7 @@ function TopUtilityBar() {
       <div className="flex h-14 items-center justify-between gap-4 px-6">
         <Link className="flex items-center gap-3" to="/">
           <img
-            alt="PMI SA Logo"
+            alt="PMIS Services Logo"
             className="h-10 w-auto"
             height={40}
             src="/logo.webp"
@@ -319,12 +319,21 @@ function TopUtilityBar() {
           />
         </Link>
 
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
           <a
-            className="text-gray-700 text-sm hover:text-primary"
-            href="https://exam.pmisa.in"
-            rel="noopener noreferrer"
+            className="rounded-lg border border-purple-200 bg-purple-50 px-4 py-2 text-sm font-semibold text-purple-700 transition-colors hover:bg-purple-100"
+            href="http://189.72.145.70/"
             target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consent Portal
+          </a>
+
+          <a
+            className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100"
+            href="http://189.72.145.70:8081/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Log in
           </a>
@@ -356,7 +365,7 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
                 <NavigationMenuTrigger
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white data-[open]:bg-primary data-[popup-open]:bg-primary data-[open]:text-white data-[popup-open]:text-white data-[open]:hover:bg-primary data-[popup-open]:hover:bg-primary"
+                    "h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white data-[open]:bg-primary data-[popup-open]:bg-primary data-[open]:text-white data-[popup-open]:text-white data-[open]:hover:bg-primary data-[popup-open]:hover:bg-primary",
                   )}
                 >
                   {item.label}
@@ -522,10 +531,21 @@ function MobileSheet({
             About Us
           </Link>
         </div>
+
         <div className="flex items-center gap-2 border-gray-200 border-t bg-white p-4">
           <a
+            className="flex-1 rounded border border-purple-300 bg-purple-50 px-3 py-2 text-center font-semibold text-purple-700 text-sm"
+            href="http://189.72.145.70/"
+            onClick={onClose}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Consent Portal
+          </a>
+
+          <a
             className="flex-1 rounded border border-primary px-3 py-2 text-center font-semibold text-primary text-sm"
-            href="https://exam.pmisa.in"
+            href="http://189.72.145.70:8081/"
             onClick={onClose}
             rel="noopener noreferrer"
             target="_blank"
