@@ -17,11 +17,11 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "PMIS Services | Project Management & Professional Certifications",
+        title: "PMI Global Services | Project Management & Professional Certifications",
       },
       {
         name: "description",
-        content: "PMIS Services empowers project professionals through certifications, professional learning, and organizational solutions.",
+        content: "PMI Global Services empowers project professionals through certifications, professional learning, and organizational solutions.",
       },
     ],
     links: [
