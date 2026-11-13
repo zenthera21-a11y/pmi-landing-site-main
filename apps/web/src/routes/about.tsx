@@ -17,11 +17,11 @@ export const Route = createFileRoute("/about")({
   component: AboutComponent,
   head: () => ({
     meta: [
-      { title: "About | PMIS Services" },
+      { title: "About | PMI Global Services" },
       {
         name: "description",
         content:
-          "Verified PMIS Services corporate financial details, banking partner, and secure payment transparency.",
+          "Verified PMI Global Services corporate financial details, banking partner, and secure payment transparency.",
       },
     ],
   }),
@@ -55,7 +55,7 @@ function AboutComponent() {
             </h1>
 
             <p className="mt-6 max-w-xl text-[#475569] text-lg leading-8 lg:text-xl">
-              At PMIS Services, we maintain strictly verified financial channels for
+              At PMI Global Services, we maintain strictly verified financial channels for
               all enterprise transactions through our official partner, ensuring
               the highest standards of accountability and trust in every
               operation we undertake.
@@ -159,7 +159,7 @@ function BusinessCard() {
           <IconCertificate size={16} />
         </div>
         <p className="mt-3 font-extrabold text-2xl text-[#1e0a45]">
-          PMIS <span className="text-[#5b21b6]">Services</span>
+          PMI Global Services
         </p>
         <p className="mt-1 text-slate-500 text-sm">
           Trusted. Verified. Compliant.
@@ -171,7 +171,7 @@ function BusinessCard() {
           className="md:col-span-2 xl:col-span-3"
           icon={<IconBuildingCommunity size={22} />}
           label="Business Name"
-          value="PMIS Services"
+          value="PMI Global Services"
         />
         <DetailItem
           icon={<IconReceiptTax size={22} />}
@@ -338,7 +338,7 @@ function MemberCard({ name, role }: { name: string; role: string }) {
         </div>
       </div>
       <p className="mt-4 text-[#475569] text-sm leading-6">
-        {role} at PMIS Services, supporting verified and transparent financial
+        {role} at PMI Global Services, supporting verified and transparent financial
         operations.
       </p>
     </article>

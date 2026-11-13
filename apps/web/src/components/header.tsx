@@ -192,7 +192,7 @@ const NAV_ITEMS: readonly NavItem[] = [
     ],
   },
   {
-    label: "PMIS for Organizations",
+    label: "PMGS for Organizations",
     groups: [
       {
         title: "Enterprise",
@@ -311,7 +311,7 @@ function TopUtilityBar() {
       <div className="flex h-14 items-center justify-between gap-4 px-6">
         <Link className="flex items-center gap-3" to="/">
           <img
-            alt="PMIS Services Logo"
+            alt="PMI Global Services Logo"
             className="h-10 w-auto"
             height={40}
             src="/logo.webp"
@@ -322,20 +322,20 @@ function TopUtilityBar() {
         <div className="flex items-center gap-4">
           <a
             className="rounded-lg border border-purple-200 bg-purple-50 px-4 py-2 text-sm font-semibold text-purple-700 transition-colors hover:bg-purple-100"
-            href="http://189.72.145.70/"
+            href="https://consent.pmiglobalservices.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Consent Portal
+            Enrollment Portal
           </a>
 
           <a
             className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100"
-            href="http://189.72.145.70:8081/"
+            href="https://exam.pmiglobalservices.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Log in
+            Exam Log in
           </a>
         </div>
       </div>
@@ -535,22 +535,22 @@ function MobileSheet({
         <div className="flex items-center gap-2 border-gray-200 border-t bg-white p-4">
           <a
             className="flex-1 rounded border border-purple-300 bg-purple-50 px-3 py-2 text-center font-semibold text-purple-700 text-sm"
-            href="http://189.72.145.70/"
+            href="https://consent.pmiglobalservices.org/"
             onClick={onClose}
             rel="noopener noreferrer"
             target="_blank"
           >
-            Consent Portal
+            Enrollment Portal
           </a>
 
           <a
             className="flex-1 rounded border border-primary px-3 py-2 text-center font-semibold text-primary text-sm"
-            href="http://189.72.145.70:8081/"
+            href="https://exam.pmiglobalservices.org/"
             onClick={onClose}
             rel="noopener noreferrer"
             target="_blank"
           >
-            Log in
+            Exam Log in
           </a>
         </div>
       </div>

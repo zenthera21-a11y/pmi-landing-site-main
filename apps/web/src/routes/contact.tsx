@@ -190,9 +190,9 @@ function ContactComponent() {
                     </p>
                     <a
                       className="mb-1 block font-semibold text-lg hover:underline"
-                      href="mailto:sales@pmisservices.com"
+                      href="mailto:admission@pmiglobalservices.org"
                     >
-                      sales@pmisservices.com
+                      admission@pmiglobalservices.org
                     </a>
                     <p className="text-gray-500 text-sm">
                       Expect a reply within 24 hours
