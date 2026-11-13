@@ -192,7 +192,7 @@ function BusinessCard() {
           className="md:col-span-2 xl:col-span-3"
           icon={<IconMapPin size={22} />}
           label="Registered Business Address"
-          value="Oberoi Garden City, Off Western Express Highway, Goregaon East, Mumbai, 400063, Maharashtra, India"
+          value="Plot No. C-53, Bandra Kurla Complex, Mumbai, Maharashtra 400098"
         />
       </div>
     </article>

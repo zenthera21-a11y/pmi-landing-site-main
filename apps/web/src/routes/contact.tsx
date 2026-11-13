@@ -209,8 +209,8 @@ function ContactComponent() {
                       Visit HQ
                     </p>
                     <p className="font-semibold text-lg">
-                      Oberoi Garden City, Off Western Express Highway, Goregaon
-                      East, Mumbai, 400063, Maharashtra, India
+                      Plot No. C-53, Bandra Kurla Complex, Mumbai, Maharashtra
+                      400098
                     </p>
                   </div>
                 </div>
